@@ -1,0 +1,269 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url("../img/authors.jpg") !important;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.curtain {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.darkness {
+  background-color: #0000009d;
+  border-radius: 100px;
+}
+.social-media-boxes {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the icons to the right */
+  margin-right: 10px; /* Adds a small margin to the left side of the icons */
+  margin-top: 0 !important;
+}
+
+.social-media-boxes .box {
+  margin-right: 10px; /* Adds spacing between the social media icons */
+}
+.box {
+  padding: 0 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+.box img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #282828 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #a418db !important;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Changed to auto for proportional resizing */
+  max-height: 150px; /* Added maximum height */
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 8px; /* Decreased margin */
+}
+
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pagination button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button:last-child {
+  margin-right: 0;
+}
+
+#pagination button:hover {
+  background-color: #00bb28;
+}
+
+#pagination button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+#pagination button.previousBTN,
+#pagination button.nextBTN {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button.previousBTN:hover,
+#pagination button.nextBTN:hover {
+  background-color: #ff4747;
+}
+.read-more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  animation: pulse 1s infinite;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.button {
+  border: none;
+  font-size: 17px;
+  padding: 1em 2em;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 1;
+  background: #caf0f8;
+  font-weight: bold;;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 #333, 2px 2px 200px #ffba08 inset;
+  color: #000000;
+}
+
+
+.button:active {
+  transform: scale(.98);
+}
+
+.button:hover {
+  box-shadow: 2px 2px 0 #333,
+             2px 2px 200px #003566 inset;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  left: -41%;
+  width: 150%;
+  height: 300%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 #333,
+             0 0 0 8px #d00000 inset,
+             0 0 0 16px #dc2f02 inset,
+             0 0 0 24px #e85d04 inset,
+             0 0 0 32px #f48c06 inset,
+             0 0 0 40px #faa307 inset;
+  z-index: -1;
+  transition: .2s;
+}
+
+.button:active::before {
+  opacity: .001;
+  box-shadow: 2px 2px 200px #03045e inset;
+}
+
+.button:hover::before {
+  box-shadow: 2px 2px 0 #333,
+             0 0 0 8px #90e0ef inset,
+             0 0 0 16px #48cae4 inset,
+             0 0 0 24px #00b4d8 inset,
+             0 0 0 32px #0096c7 inset,
+             0 0 0 40px #0077b6 inset;
+  left: -9%;
+  width: 150%;
+  height: 300%;
+}
+
+#top {
+  color: rgb(248, 201, 12);
+  font-weight: bold;
+  font-family: 'Sedgwick Ave Display', cursive !important;
+  font-size: auto;
+}
+footer {
+  background-color: #222;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer p {
+  color: #eee;
+  font-size: 16px;
+  width: 60%;
+  margin: 0;
+}
+
+footer a{
+  color: #eee;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+footer a:hover{
+  color: #ff0000;
+}
+.page-number {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
